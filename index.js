@@ -26,7 +26,7 @@ app.use(passport.session());
 passport.use(new GitHubStrategy({
   clientID: GITHUB_CLIENT_ID,
   clientSecret: GITHUB_CLIENT_SECRET,
-  callbackURL: 'https://app4080githubapi.netlify.app/auth/github/callback',
+  callbackURL: 'https://app4080-github-api.onrender.com/auth/github/callback',
 },
 function(accessToken, refreshToken, profile, done) {
   // Store user information in session or database as needed
